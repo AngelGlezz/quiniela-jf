@@ -170,6 +170,11 @@
 }
 
 @media(max-width: 850px) and (max-height: 420px) {
+	#indepth_cover {
+	    background-image: none;
+	    background-color: #1c2439;
+	}
+	
 	#content-cover {
 		width: 55%;
 	}
