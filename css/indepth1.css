@@ -83,6 +83,22 @@
 	display: none!important;
 }
 
+#txt-fin {
+	width: 60%;
+	margin: auto;
+	font-family: "Bebas-neue";
+	font-size: 22px;
+	color: #fff;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#txt-fin a {
+	text-decoration: none;
+	color: #2ee080;
+}
+
 @media(max-width: 960px) {
 	.indepth_content {
 	    width: 750px;
@@ -150,6 +166,10 @@
 
     .director_img a img {
     	width: 189px;
+    }
+
+    #txt-fin {
+    	width: 80%;
     }
 }
 
