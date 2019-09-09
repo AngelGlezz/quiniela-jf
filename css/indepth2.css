@@ -48,8 +48,12 @@
 	padding-bottom: 10px;
 }
 
+.director_img:nth-child(3n) {
+	margin-right: 0px;
+}
+
 .director_img a img {
-	width: 280px;
+	width: 293px;
 }
 
 .img-fin {
