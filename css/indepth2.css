@@ -4,6 +4,10 @@
    src: url(../fonts/BebasNeue.otf) format("opentype");
 }
 
+.indepth_content, .close {
+	display: none;
+}
+
 #indepth_cover {
 	background: url(../images/portada.jpg) no-repeat;
 	background-size: cover;
@@ -73,6 +77,26 @@
 	width: 100%;
 }
 
+#main-content {
+	width: 60%;
+	margin: 100px auto;
+	overflow: auto;
+}
+
+#content-liga {
+	width: 100%;
+	overflow: auto;
+	margin: auto;
+}
+
+#mx {
+	float: left;
+}
+
+#usa {
+	float: right;
+}
+
 #header-txt {
 	width: 60%;
 	margin: auto;
@@ -81,6 +105,17 @@
 	color: #fff;
 	letter-spacing: 3px;
 	text-align: center;
+}
+
+.liga-item {
+	width: 300px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+
+.liga-item img {
+	width: 300px;
 }
 
 .fancybox-nav span {
@@ -101,6 +136,33 @@
 #txt-fin a {
 	text-decoration: none;
 	color: #2ee080;
+}
+
+.close {
+	width: 120px;
+	font-family: "Bebas-neue";
+	font-size: 25px;
+	color: #2ee080;
+	letter-spacing: 3px;
+	text-align: right;
+	cursor: pointer;
+	position: absolute;
+	right: 100px;
+}
+
+.close span {
+	font-size: 25px;
+	color: #2ee080;
+}
+
+@media(max-width: 1160px) {
+	.close {
+		right: 20px;
+	}
+
+	#main-content {
+		width: 80%;
+	}
 }
 
 @media(max-width: 960px) {
@@ -131,6 +193,10 @@
 	.indepth_content {
     	width: 482px;
     }
+
+    #main-content {
+		width: 95%;
+	}
 }
 
 @media(max-width: 640px) {
@@ -152,6 +218,15 @@
 
 	#logo-cover img {
 		width: 100%;
+	}
+
+	#main-content {
+		width: 60%;
+	}
+
+	#mx, #usa {
+		float: none;
+		margin: 20px auto;
 	}
 }
 
@@ -177,9 +252,20 @@
     }
 }
 
+@media(max-width: 510px) {
+	.liga-item {
+		width: 99%;
+	}
+
+	.liga-item img {
+		width: 100%;
+	}
+}
+
 @media(max-width: 430px) {
 	.indepth_content {
     	width: 95%;
+    	margin-top: 40px;
     }
 
 	.director_img a img {
@@ -190,6 +276,10 @@
     	margin: 30px auto!important;
     	float: none;
     	width: 260px;
+    }
+
+    #main-content, #content-liga {
+    	width: 90%;
     }
 }
 
