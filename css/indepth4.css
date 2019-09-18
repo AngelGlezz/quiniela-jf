@@ -84,17 +84,33 @@
 }
 
 #content-liga {
-	width: 100%;
+	width: 80%;
 	overflow: auto;
 	margin: auto;
 }
 
 #mx {
+	background-image: url(../images/Quiniela_FUT_1.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
 	float: left;
 }
 
 #usa {
+	background-image: url(../images/Quiniela_NFL_1.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
 	float: right;
+}
+
+#mx:hover {
+	background-image: url(../images/Quiniela_FUT_2.png);
+}
+
+#usa:hover {
+	background-image: url(../images/Quiniela_NFL_2.png);
 }
 
 #header-txt {
@@ -109,7 +125,7 @@
 
 .liga-item {
 	width: 300px;
-	border: 1px solid #fff;
+	height: 400px;
 	cursor: pointer;
 	margin-bottom: 50px;
 }
@@ -153,6 +169,12 @@
 .close span {
 	font-size: 25px;
 	color: #2ee080;
+}
+
+@media(max-width: 1260px) {
+	#content-liga {
+		width: 100%;
+	}
 }
 
 @media(max-width: 1160px) {
@@ -228,6 +250,14 @@
 		float: none;
 		margin: 20px auto;
 	}
+
+	#mx {
+		background-image: url(../images/Quiniela_FUT_2.png);
+	}
+
+	#usa {
+		background-image: url(../images/Quiniela_NFL_2.png);
+	}
 }
 
 @media(max-width: 570px) {
@@ -254,10 +284,6 @@
 
 @media(max-width: 510px) {
 	.liga-item {
-		width: 99%;
-	}
-
-	.liga-item img {
 		width: 100%;
 	}
 }
@@ -281,6 +307,10 @@
     #main-content, #content-liga {
     	width: 90%;
     }
+
+    .liga-item {
+		height: 350px;
+	}
 }
 
 @media(max-width: 850px) and (max-height: 420px) {

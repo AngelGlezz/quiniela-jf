@@ -4,6 +4,11 @@ $(document).ready(function(){
         'padding': 0
     });
 
+    $(".show-nfl").fancybox({
+        'centerOnScroll': true,
+        'padding': 0
+    });
+
     $("#mx").click(function(){
     	$("#liga").show();
     	$("#main-content").hide();
